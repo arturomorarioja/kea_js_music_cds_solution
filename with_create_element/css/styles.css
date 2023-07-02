@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+:root {
+    --colorTextSecondary: floralwhite;
+
+    --colorPrimary: #20408A;
+    --colorSecondary: #A9ABAE;
+
+    --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
+
+    --imgDelete: url(../img/trash.png);
+
+    --widthLabel: 6rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+}
+
+header {
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+}
+
+main {
+    padding: 0.5rem;
+    line-height: 1.4rem;
+}
+@media (min-width: 1024px) {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (min-width: 1224px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
+
+label {
+    width: var(--widthLabel);
+}
+input[type=text] {
+    display: block;
+    width: 100%;
+}
+form > div {
+    margin-bottom: 0.5rem;
+}
+input[id=txtYear] {
+    float: right;
+    display: inline;
+    width: auto;
+    text-align: right;
+}
+@media (min-width: 480px) {
+    input.textInput {
+        float: right;
+        width: calc(100% - var(--widthLabel));
+        display: inline;        
+    }
+}
+
+input[type=submit] {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: var(--fontMain);
+    font-size: 1.2rem;    
+    color: var(--colorPrimary);
+}
+
+table {
+    visibility: hidden;
+    width: 100%;
+    table-layout: auto;
+    border: solid thin var(--colorPrimary);    
+}
+table > thead {
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: left;
+}
+th, tr {
+    padding: 0 0.5rem;
+}
+th.right, td.right {
+    text-align: right;
+}
+
+img.delete {
+    content: var(--imgDelete);
+    cursor: pointer;
+}

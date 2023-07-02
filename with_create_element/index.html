@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music CDs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css"></style>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Music CDs</h1>
+    </header>
+    <main>
+        <form id="frmCD">
+            <div>
+                <label for="txtAuthor">Author</label>
+                <input type="text" class="textInput" id="txtAuthor" required>
+            </div>
+            <div>
+                <label for="txtTitle">Title</label>
+                <input type="text" class="textInput" id="txtTitle" required>
+            </div>
+            <div>
+                <label for="txtYear">Year</label>
+                <input type="text" id="txtYear" pattern="[0-9]{4}" required>
+            </div>
+            <div>
+                <input type="submit" value="Add">
+            </div>
+        </form>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th class="right">Year</th>
+                        <th class="right"></th>     <!-- Delete icon -->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021 Arturo Mora-Rioja</p>
+    </footer>
+</body>
+</html>
