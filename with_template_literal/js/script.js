@@ -3,15 +3,13 @@
 document.querySelector('#frmCD').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const author = document.querySelector('#txtAuthor').value;
-    const title = document.querySelector('#txtTitle').value;
-    const year = parseInt(document.querySelector('#txtYear').value);
+    console.log(e);
 
     const trNew = document.createElement('tr');
     trNew.innerHTML = `
-        <td>${author}</td>
-        <td>${title}</td>
-        <td class="right">${year}</td>
+        <td>${e.target.txtAuthor.value}</td>
+        <td>${e.target.txtTitle.value}</td>
+        <td class="right">${parseInt(e.target.txtYear.value)}</td>
         <td class="right"><img src="img/trash.png" onclick="this.parentElement.parentElement.remove();"></td>
     `;
     document.querySelector('table > tbody').appendChild(trNew);

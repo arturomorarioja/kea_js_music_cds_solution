@@ -107,7 +107,6 @@ th.right, td.right {
     text-align: right;
 }
 
-img.delete {
-    content: var(--imgDelete);
+table img:hover {
     cursor: pointer;
 }

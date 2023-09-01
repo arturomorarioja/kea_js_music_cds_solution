@@ -3,9 +3,9 @@
 document.querySelector('#frmCD').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const author = document.querySelector('#txtAuthor').value;
-    const title = document.querySelector('#txtTitle').value;
-    const year = parseInt(document.querySelector('#txtYear').value);
+    const author = e.target.txtAuthor.value;
+    const title = e.target.txtTitle.value;
+    const year = parseInt(e.target.txtYear.value);
 
     /*
         The row is created in browser memory
