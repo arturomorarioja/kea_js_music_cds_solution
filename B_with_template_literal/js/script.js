@@ -22,8 +22,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
         <td class="right"><img src="img/trash.png" onclick="this.parentElement.parentElement.remove();"></td>
     `;
     document.querySelector('table > tbody').appendChild(trNew);
-
-    document.querySelector('table').style.visibility = 'visible';
+    document.querySelector('table').classList.add('visible');
 
     // The form is reset
     this.reset();

@@ -41,8 +41,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
         The row is appended to the DOM on the page
     */
     document.querySelector('table > tbody').appendChild(trNew);
-
-    document.querySelector('table').style.visibility = 'visible';
+    document.querySelector('table').classList.add('visible');
 
     this.reset();   // The form is reset
 });

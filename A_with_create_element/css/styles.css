@@ -106,6 +106,10 @@ th.right, td.right {
     text-align: right;
 }
 
+.visible {
+    visibility: visible;
+}
+
 img.delete {
     content: var(--imgDelete);
     cursor: pointer;

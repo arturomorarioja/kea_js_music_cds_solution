@@ -110,3 +110,7 @@ th.right, td.right {
 table img:hover {
     cursor: pointer;
 }
+
+.visible {
+    visibility: visible;
+}
