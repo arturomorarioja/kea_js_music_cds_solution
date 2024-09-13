@@ -11,14 +11,21 @@ Simple DOM manipulation.
     \+ Compliant with the separation of concerns design pattern
     
     \- Bulky code   
-2. With template literal
+2. With template literal and inline JavaScript
     
     \+ Efficient 
     
     \+ Minimum code
     
     \- More difficult to maintain, as it contradicts the separation of concerns design pattern
-3. With cloneNode()    
+3. With template literal and event delegation
+
+    \+ Efficient
+
+    \+ Little code
+
+    \+ Easy to read and maintain
+4. With cloneNode()    
     
     \+ Elegant
     
