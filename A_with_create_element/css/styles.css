@@ -81,7 +81,7 @@ input[id=txtYear] {
 
 input[type=submit] {
     margin-top: 0.5rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.25rem 1rem;
     border-radius: 0.25rem;
     font-family: var(--fontMain);
     font-size: 1.2rem;    
