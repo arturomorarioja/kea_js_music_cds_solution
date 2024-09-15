@@ -1,7 +1,7 @@
 # KEA Music CDs
 
 ## Purpose
-Simple DOM manipulation.
+Different examples of simple DOM manipulation.
 
 ## Solutions
 1. With createElement()
