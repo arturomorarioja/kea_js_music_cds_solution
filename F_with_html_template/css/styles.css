@@ -7,8 +7,6 @@
 
     --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
 
-    --imgDelete: url(../img/trash.png);
-
     --widthLabel: 6rem;
 }
 
@@ -111,6 +109,5 @@ table {
 }
 
 img.delete {
-    content: var(--imgDelete);
     cursor: pointer;
 }

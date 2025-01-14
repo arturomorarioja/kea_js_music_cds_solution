@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
-
 :root {
     --colorTextSecondary: floralwhite;
 
@@ -14,8 +13,9 @@
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,15 +31,11 @@ header {
 main {
     padding: 0.5rem;
     line-height: 1.4rem;
-}
-@media (min-width: 1024px) {
-    main {
+    @media (min-width: 1024px) {
         width: 90%;
         margin: auto;
     }
-}
-@media (min-width: 1224px) {
-    main {
+    @media (min-width: 1224px) {
         width: 80%;
         margin: auto;
     }
@@ -55,37 +51,41 @@ footer {
     text-align: center;
 }
 
-label {
-    width: var(--widthLabel);
-}
-input[type=text] {
-    display: block;
-    width: 100%;
-}
-form > div {
-    margin-bottom: 0.5rem;
-}
-input[id=txtYear] {
-    float: right;
-    display: inline;
-    width: auto;
-    text-align: right;
-}
-@media (min-width: 480px) {
-    input.textInput {
-        float: right;
-        width: calc(100% - var(--widthLabel));
-        display: inline;        
+form {
+    > div {
+        margin-bottom: 0.5rem;
     }
-}
+    label {
+        width: var(--widthLabel);
+    }
 
-input[type=submit] {
-    margin-top: 0.5rem;
-    padding: 0.25rem 1rem;
-    border-radius: 0.25rem;
-    font-family: var(--fontMain);
-    font-size: 1.2rem;    
-    color: var(--colorPrimary);
+    input {
+        &[type=text] {
+            display: block;
+            width: 100%;
+        }
+        &[id=txtYear] {
+            float: right;
+            display: inline;
+            width: auto;
+            text-align: right;
+        }
+        @media (min-width: 480px) {
+            &.textInput {
+                float: right;
+                width: calc(100% - var(--widthLabel));
+                display: inline;        
+            }
+        }        
+        &[type=submit] {
+            margin-top: 0.5rem;
+            padding: 0.25rem 1rem;
+            border-radius: 0.25rem;
+            font-family: var(--fontMain);
+            font-size: 1.2rem;    
+            color: var(--colorPrimary);
+        }
+    }
 }
 
 table {
@@ -93,24 +93,24 @@ table {
     width: 100%;
     table-layout: auto;
     border: solid thin var(--colorPrimary);    
-}
-table > thead {
-    color: var(--colorTextSecondary);
-    background-color: var(--colorPrimary);
-    text-align: left;
-}
-th, tr {
-    padding: 0 0.5rem;
-    /* max-width: auto; */
-}
-th.right, td.right {
-    text-align: right;
-}
-
-table img:hover {
-    cursor: pointer;
+    > thead {
+        color: var(--colorTextSecondary);
+        background-color: var(--colorPrimary);
+        text-align: left;
+    }
+    th, tr {
+        padding: 0 0.5rem;
+    }
+    th.right, td.right {
+        text-align: right;
+    }
 }
 
 .visible {
     visibility: visible;
+}
+
+img.delete {
+    content: var(--imgDelete);
+    cursor: pointer;
 }

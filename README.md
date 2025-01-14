@@ -4,14 +4,14 @@
 Different examples of simple DOM manipulation.
 
 ## Solutions
-1. With createElement()
+1. With `createElement()`
     
     \+ Elegant
     
     \+ Compliant with the separation of concerns design pattern
     
     \- Bulky code   
-2. With insertRow()
+2. With `insertRow()`
     
     \+ Easy to read and maintain
     
@@ -32,7 +32,7 @@ Different examples of simple DOM manipulation.
     \+ Little code
 
     \+ Easy to read and maintain
-5. With cloneNode()    
+5. With `cloneNode()`
     
     \+ Elegant
     
@@ -41,6 +41,17 @@ Different examples of simple DOM manipulation.
     \+ Compliant with the separation of concerns design pattern
     
     \- Does not clone event listeners
+6. With HTML `<template>`
+
+    \+ Elegant
+
+    \+ Efficient
+
+    \+ Enhances readability
+
+    \+ Compliant with the separation of concerns design pattern
+
+    \- The event listener has to be added manually
 
 ## Tools
 JavaScript / CSS3 / HTML5

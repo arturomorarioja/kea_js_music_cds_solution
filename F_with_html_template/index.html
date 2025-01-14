@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Music CDs</h1>
-        <p>With createElement()</p>
+        <p>With HTML template</p>
     </header>
     <main>
         <form id="frmCD">
@@ -49,3 +49,11 @@
     </footer>
 </body>
 </html>
+<template id="cdRow">
+    <tr>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="right"><img src="img/trash.png" alt="Delete CD" class="delete"></td>
+    </tr>
+</template>
