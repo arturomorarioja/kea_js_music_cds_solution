@@ -1,4 +1,4 @@
-# KEA Music CDs
+# Music CDs
 
 ## Purpose
 Different examples of simple DOM manipulation.
