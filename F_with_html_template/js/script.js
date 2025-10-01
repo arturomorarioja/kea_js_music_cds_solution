@@ -17,7 +17,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
     
     // The delete button's event listener has to be added manually
     trNew.querySelector('img').addEventListener('click', function() {
-        this.parentElement.parentElement.remove();
+        this.closest('tr').remove();
     });
     
     /*

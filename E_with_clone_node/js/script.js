@@ -40,7 +40,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
     // As cloneNode() does not clone event listeners,
     // the delete button's has to be added manually
     trNew.querySelector('img').addEventListener('click', function() {
-        this.parentElement.parentElement.remove();
+        this.closest('tr').remove();
     });
     
     /*

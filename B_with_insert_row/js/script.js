@@ -26,7 +26,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
     imgDelete.classList.add('delete');
     // When the delete icon is clicked, the whole row (the <tr>) is removed
     imgDelete.addEventListener('click', function() {
-        this.parentElement.parentElement.remove();
+        this.closest('tr').remove();
     });
 
     const tdDelete = trNew.insertCell();

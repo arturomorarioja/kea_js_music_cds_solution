@@ -11,7 +11,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
             <td>${e.target.txtAuthor.value}</td>
             <td>${e.target.txtTitle.value}</td>
             <td class="right">${parseInt(e.target.txtYear.value)}</td>
-            <td class="right"><img src="img/trash.png" class="deleteIcon"></td>
+            <td class="right"><img src="img/trash.png" class="delete"></td>
         </tr>
     `;
     document.querySelector('table > tbody').innerHTML += trNew;
@@ -24,7 +24,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
 // Through event delegation, the event listener for removing a row
 // is added only once to the container table
 document.querySelector('table').addEventListener('click', (e) => {
-    if (e.target && e.target.classList.contains('deleteIcon')) {
+    if (e.target && e.target.classList.contains('delete')) {
         e.target.parentElement.parentElement.remove();
     }
 });

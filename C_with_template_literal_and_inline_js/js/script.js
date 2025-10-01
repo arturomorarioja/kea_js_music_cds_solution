@@ -17,7 +17,7 @@ document.querySelector('#frmCD').addEventListener('submit', function(e) {
             <td>${e.target.txtAuthor.value}</td>
             <td>${e.target.txtTitle.value}</td>
             <td class="right">${parseInt(e.target.txtYear.value)}</td>
-            <td class="right"><img src="img/trash.png" onclick="this.parentElement.parentElement.remove();"></td>
+            <td class="right"><img src="img/trash.png" onclick="this.closest('tr').remove();"></td>
         </tr>
     `;
     document.querySelector('table > tbody').innerHTML += trNew;
